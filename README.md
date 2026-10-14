@@ -154,8 +154,3 @@ Start MySQL and Python, then import `postman/Research-Opportunity-Portal.postman
 | Request the deleted ID              | 09         | 404 Not Found                                  |
 | Invalid or missing data             | 10         | 400; missing title and invalid values rejected |
 
-Requests 11 and 12 optionally clean up only the first and second records from this demonstration. Skip them to keep those records visible in React; refresh the web directory after using Postman. Run one collection iteration at a time because its ID variables are shared.
-
-For manual requests, choose **Body → raw → JSON** and use the example above. After deleting a record, GET that same ID to demonstrate 404. Omit `title` or send `available_positions: 0` to demonstrate 400.
-
-Export the **collection JSON**, choosing **Collection v2.1** if offered. In current Postman use the collection's `…` menu → **More → Export collection → Export JSON**. Keep its requests, bodies, test scripts and variables, and save it under `postman/`. The required export is already included. Reset generated ID variable values before re-exporting. Do not export secrets, account settings, or a whole workspace. Official export help: https://learning.postman.com/docs/getting-started/importing-and-exporting/exporting-data/
