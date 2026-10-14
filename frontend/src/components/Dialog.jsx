@@ -71,7 +71,7 @@ export default function Dialog({
       >
         <header className="dialog-header">
           <div>
-            <p className="eyebrow">RESEARCH DESK</p>
+            <p className="eyebrow">RESEARCH OPPORTUNITY PORTAL</p>
             <h2 id={titleId}>{title}</h2>
             {subtitle && <p>{subtitle}</p>}
           </div>

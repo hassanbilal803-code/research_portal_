@@ -149,12 +149,16 @@ export default function App() {
   return (
     <div className="workspace">
       <aside className="sidebar">
-        <a href="/" className="brand" aria-label="Research Desk home">
+        <a
+          href="/"
+          className="brand"
+          aria-label="Research Opportunity Portal home"
+        >
           <span className="brand-mark">
             <Icon name="book" size={24} />
           </span>
           <span>
-            Research Desk<small>UNIVERSITY PORTAL</small>
+            Research Opportunity<small>PORTAL</small>
           </span>
         </a>
         <p className="sidebar-caption">WORKSPACE</p>
@@ -205,7 +209,7 @@ export default function App() {
           <section className="page-heading">
             <div>
               <p className="eyebrow">YOUR NEXT COLLABORATION STARTS HERE</p>
-              <h1>Research opportunities</h1>
+              <h1>Research Opportunity Portal</h1>
               <p>
                 One workspace to publish, explore, and manage your research
                 openings.
@@ -458,7 +462,7 @@ export default function App() {
             )}
           </section>
           <footer className="site-footer">
-            <strong>Research Desk</strong>
+            <strong>Research Opportunity Portal</strong>
             <span>Good ideas deserve the right team.</span>
             <a href={repositoryUrl} target="_blank" rel="noreferrer">
               View project <Icon name="external" size={13} />

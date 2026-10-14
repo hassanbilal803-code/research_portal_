@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "Research Desk - Hassan Bilal - Python and MySQL",
+    "name": "Research Opportunity Portal - Hassan Bilal - Python and MySQL",
     "description": "P229072 Hassan Bilal. Run once, in order, with Python and MySQL running. Covers every TA-required Postman demonstration. The last two requests optionally clean up this run's remaining records. No account or environment credentials are required.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },

@@ -1,4 +1,4 @@
-# Research Desk — Research Opportunity Portal
+# Research Opportunity Portal
 
 **Student:** Hassan Bilal · **Student ID:** P229072
 
@@ -159,28 +159,3 @@ Requests 11 and 12 optionally clean up only the first and second records from th
 For manual requests, choose **Body → raw → JSON** and use the example above. After deleting a record, GET that same ID to demonstrate 404. Omit `title` or send `available_positions: 0` to demonstrate 400.
 
 Export the **collection JSON**, choosing **Collection v2.1** if offered. In current Postman use the collection's `…` menu → **More → Export collection → Export JSON**. Keep its requests, bodies, test scripts and variables, and save it under `postman/`. The required export is already included. Reset generated ID variable values before re-exporting. Do not export secrets, account settings, or a whole workspace. Official export help: https://learning.postman.com/docs/getting-started/importing-and-exporting/exporting-data/
-
-## Troubleshooting
-
-- **Database 500:** start MySQL, import the schema, check the private `.env` account/port/database settings and permissions, then restart Python.
-- **Cannot reach the server:** run Python on 5000 and React on 5173. If changing the backend port, update `frontend/vite.config.js` and Postman's `baseUrl` too.
-- **Port in use:** stop the earlier process before starting another copy.
-- **Empty directory:** create a record; no data is hard-coded in the frontend.
-
-## Validation completed
-
-- React production build passed.
-- The exported Postman collection passed all **12 requests and 34 assertions** against this project's MySQL database, including the TA's eight required scenarios.
-- **36 additional API checks** passed for field validation, unchanged updates, Unicode, literal SQL-like text, direct MySQL persistence, deleted-record responses, and serving the built frontend.
-- A separate failing-database check confirmed a sanitized JSON **500** response.
-- Browser create, complete details, edit, close/reopen, delete, required-field errors, search, and status filtering passed. Saved edits survived page refresh. Desktop and mobile layouts were visually inspected and had no horizontal overflow.
-
-Validation scripts, screenshots, and execution reports are excluded from the submitted project.
-
-## Submission contents
-
-ZIP filename requested: **`P229072_hassan_bilal.zip`**. Include the complete frontend/backend source, dependency files, schema, exported Postman collection, and this README with the repository link. Exclude installed dependencies, build output, credentials, screenshots, validation scripts, and result files. No `docs` folder is included.
-
-**Video or video link: not supplied.** The assignment requires a one-minute demonstration video or link. A live CRUD/Postman demonstration, an instructor-run collection, or a written walkthrough can replace it only if the TA explicitly approves that substitution. No video has been created.
-
-Separate commits cover dependency setup, Python/MySQL CRUD, the React workspace, the Postman collection, visual review, and setup/submission instructions. Commit emails use this repository owner's verified GitHub no-reply address.
